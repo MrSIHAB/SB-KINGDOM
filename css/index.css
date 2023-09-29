@@ -1,0 +1,50 @@
+
+body{
+    background-blend-mode: overlay;
+}
+#intro {
+    width: 30%;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+    /* background-color: #02010552; */
+}
+
+#intro h1,
+#intro p {
+    color: #f6ffad;
+    text-shadow: 0px 0px 3px rgb(247 53 62);
+    text-wrap: nowrap;
+}
+#em{
+    background: #02001ac9;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 3px solid #ff28bf;
+    margin-top: 3%;
+}
+iframe , .iframe{
+    color: #9ec8f3;
+    box-shadow:0px 0px 24px 1px #1effd53b;
+    width: 40vw;
+    margin: 0.5em;
+    border: 5px solid;
+    border-radius: 12px;
+    flex-grow: 2;
+
+
+    /* text-shadow: 0px 0px 4px #be11a7; */
+    /* padding: 0.2em; */
+}
+@media (max-width: 800px) {
+    iframe{
+        margin: 1rem;
+    }
+
+    #intro{
+        width: 50 %;
+    }
+}

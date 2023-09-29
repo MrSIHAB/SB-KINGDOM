@@ -1,10 +1,13 @@
 
 // Embadding youtube latest 10 videos (DANBO DN)
+
+const API_KEY = 'AIzaSyDOT8j31z0GKvX2E6OAlqi3KfgAPcG0TE0'
+const CHANNEL_ID = 'UCNdvDMh56hgSP4pepXgkwbA'
 // Create a function to fetch and embed the latest video
 async function embedLatestVideo() {
     try {
         // Fetch the latest video from your channel using the YouTube Data API
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${'AIzaSyBWPzFSJqE3LuET_2ccDKoF3rv3PHhXTiM'}&channelId=${'UCNdvDMh56hgSP4pepXgkwbA'}&order=date&type=video&part=snippet&maxResults=10`);
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&type=video&part=snippet&maxResults=10`);
         const data = await response.json();
 
         // Extract the video ID

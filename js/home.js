@@ -16,18 +16,17 @@ async function embedLatestVideo(API_KEY, CHANNEL_ID){
         const videoid = data.items[0].id.videoId;
 
         return `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoid}" frameborder="0" allowfullscreen></iframe>`;
+    }catch (error) {
+        console.error('Error:', error);
+        return '';
     }
-    
-    
-    
 }
-// catch (error) {
-    // console.error('Error:', error);
-    // return '';
-// }
-    
-    // making a if-else condision to get 10+10(20) video id
-    async function extractingids(){
+
+
+
+
+// making a if-else condision to get 10+10(20) video id
+async function extractingids(){
     try{
         // Creating empty embed code to store iframe
         const embedcode = ''

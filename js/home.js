@@ -53,4 +53,4 @@ async function extractingids(){
 
 
 // Call the function to embed the latest video when the page loads
-// window.onload = embedLatestVideo;
+window.onload = embedLatestVideo;

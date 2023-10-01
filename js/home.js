@@ -30,8 +30,8 @@
 
             // Fetch and embed videos from both channels alternately
             for (let i = 0; i < 5; i++) {
-                const embed1 = await fetchAndEmbedVideos(API_KEY_CHANNEL, CHANNEL_ID);
-                const embed2 = await fetchAndEmbedVideos(API_KEY_CHANNEL, SN_CHANNEL_ID);
+                const embed1 = await fetchAndEmbedVideos(API_KEY, CHANNEL_ID);
+                const embed2 = await fetchAndEmbedVideos(API_KEY, SN_CHANNEL_ID);
                 embedCode += embed1 + embed2;
             }
 

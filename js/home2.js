@@ -21,7 +21,7 @@ async function embedLatestVideo() {
         });
 
         // Replace the content of the 'latest-video' div with the new embed code
-        const latestVideoDiv = document.getElementById('latest-dn-video');
+        const latestVideoDiv = document.getElementById('latest-video');
         latestVideoDiv.innerHTML = embedCode;
 
     } catch (error) {

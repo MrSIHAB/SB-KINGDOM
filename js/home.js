@@ -1,3 +1,9 @@
+       
+       
+       const API_KEY = 'AIzaSyDOT8j31z0GKvX2E6OAlqi3KfgAPcG0TE0';
+       const CHANNEL_ID = 'UCNdvDMh56hgSP4pepXgkwbA';
+       const SN_CHANNEL_ID = 'UC4TW4FcIA6mdxZAy4cCoHlw';
+       
        // Create functions to fetch and embed the latest videos from both channels
        async function fetchAndEmbedVideos(apiKey, channelId) {
         try {
@@ -24,8 +30,8 @@
 
             // Fetch and embed videos from both channels alternately
             for (let i = 0; i < 5; i++) {
-                const embed1 = await fetchAndEmbedVideos(API_KEY_CHANNEL_1, CHANNEL_ID_1);
-                const embed2 = await fetchAndEmbedVideos(API_KEY_CHANNEL_2, CHANNEL_ID_2);
+                const embed1 = await fetchAndEmbedVideos(API_KEY_CHANNEL, CHANNEL_ID);
+                const embed2 = await fetchAndEmbedVideos(API_KEY_CHANNEL, SN_CHANNEL_ID);
                 embedCode += embed1 + embed2;
             }
 

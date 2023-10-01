@@ -6,11 +6,11 @@ const SN_CHANNEL_ID = 'UC4TW4FcIA6mdxZAy4cCoHlw';
 
 
 // Create a function to fetch and embed the latest video
-async function embedLatestVideo(apikey, channelid){
+async function embedLatestVideo(API_KEY, CHANNEL_ID){
     try {
 
         // Fetch the latest video from your channel using the YouTube Data API
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apikey}&channelId=${channelid}&order=date&type=video&part=snippet&maxResults=1`);
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&type=video&part=snippet&maxResults=1`);
         const data = await response.json();
 
         const videoid = data.items[0].id.videoId;
@@ -29,7 +29,7 @@ async function embedLatestVideo(apikey, channelid){
 async function extractingids(){
     try{
         // Creating empty embed code to store iframe
-        const embedcode = ''
+        const embedcode = ' '
 
         //condition
         if (i=0, i<10, i++){
@@ -53,4 +53,4 @@ async function extractingids(){
 
 
 // Call the function to embed the latest video when the page loads
-window.onload = embedLatestVideo;
+// window.onload = embedLatestVideo;

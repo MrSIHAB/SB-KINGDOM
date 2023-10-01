@@ -6,10 +6,10 @@
         const CHANNEL_ID_2 = 'UC4TW4FcIA6mdxZAy4cCoHlw';
 
         // Create functions to fetch and embed the latest videos from both channels
-        async function fetchAndEmbedVideos(apiKey, channelId) {
+        async function fetchAndEmbedVideos(API_KEY_CHANNEL_1, CHANNEL_ID_1) {
             try {
                 // Fetch the latest video from the specified channel using the YouTube Data API
-                const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&order=date&type=video&part=snippet&maxResults=1`);
+                const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY_CHANNEL_1}&channelId=${CHANNEL_ID_1}&order=date&type=video&part=snippet&maxResults=1`);
                 const data = await response.json();
 
                 // Extract the video ID

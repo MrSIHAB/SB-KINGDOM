@@ -1,0 +1,7 @@
+{
+    "livePreview.hostIP": "192.168.1.13",
+    "livePreview.defaultPreviewPath": "",
+    "livePreview.debugOnExternalPreview": false,
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    "livePreview.showServerStatusNotifications": false
+}

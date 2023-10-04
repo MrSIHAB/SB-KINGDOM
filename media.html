@@ -13,128 +13,23 @@
     <title>Media</title>
 </head>
 
-<!-- <script>
-    // Set your API key and channel ID
-    const API_KEY = 'AIzaSyBWPzFSJqE3LuET_2ccDKoF3rv3PHhXTiM';
-    const CHANNEL_ID = 'UCNdvDMh56hgSP4pepXgkwbA';
-
-    // Create a function to fetch and embed the latest video
-    async function embedLatestVideo() {
-        try {
-            // Fetch the latest video from your channel using the YouTube Data API
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&type=video&part=snippet&maxResults=10`);
-            const data = await response.json();
-
-            // Extract the video ID
-            let embedCode = ' '
-            data.items.forEach((item) => {
-                let Videoid = item.id.videoId
-                embedCode += `<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/${Videoid}" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>`
-            });
-
-            // const latestVideoId = data.items[0].id.videoId;
-
-            // Generate the HTML iframe code for embedding the video
-            // const embedCode = `<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/${latestVideoId}" title="YouTube video player"
-            // frameborder="0"
-            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            // allowfullscreen></iframe>`;
-
-            // Replace the content of the 'latest-video' div with the new embed code
-            const latestVideoDiv = document.getElementById('latest-video');
-            latestVideoDiv.innerHTML = embedCode;
-
-            // console.log(`Embedded latest video with ID: ${latestVideoId}`);
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    }
-
-    // Call the function to embed the latest video when the page loads
-    window.onload = embedLatestVideo;
-</script> -->
-
 <body>
-    <header>
-        <nav>
-            <div id="logo">
-                <div id="img">
-                    <a href="index.html"><img src="img/sbkingdom.png" alt="logo"></a>
-                </div>
-                <div id="title">
-                    <a href="index.html"></a>
-                    <h3>SB KINGDOM</h3></a>
-                </div>
-            </div>
-            <div id="navbar">
-                <ul>
-                    <li class="navli"><a href="index.html">Home</a></li>
+    <div id="nav"></div>
 
-
-                    <li class="navli"><a href="Annousement.html">Annousement</a></li>
-
-
-                    <li class="navli"><a href="Updates.html">Updates</a></li>
-
-
-                    <li class="navli"><a href="Media.html">Media</a></li>
-
-
-                    <li class="navli"><a href="About_Us.html">About Us</a></li>
-
-                </ul>
-            </div>
-
-        </nav>
-    </header>
-
-
-
-
-
+    <!-- our contents -->
     <h1 id="media">Media</h1>
-    <div id="em">
+    <div id="mediaContainer">
+
         <!-- Placeholder for the embedded YouTube video -->
         <div id="latest-video"></div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Mf4kcMVUwR8" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PpnvUl9RI_g" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmwTBaOm8" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ni-hv31Ek64" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HeTGoZyHZHw" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8SuZguuyhIk" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HJJo744ahv8" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hfWgfeLVMwI" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mMhrecqYhEs" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://youtube.com/embed/BDBpMfFOMgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h6BFG4L1rZ4?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://youtube.com/embed/BDBpMfFOMgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://youtube.com/embed/BDBpMfFOMgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://youtube.com/embed/BDBpMfFOMgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://youtube.com/embed/BDBpMfFOMgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" class="extra" style="none"></iframe> -->
 
 
@@ -143,36 +38,8 @@
 
 
 
-    <div class="footer">
-        <hr>
-        <footer>
-            <section class="footsec" id="sec1">
-                <h4 class="center">Useful Links</h4>
-                <ul class="center">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Annousement.html">Annousements</a></li>
-                    <li><a href="update.html">Updates</a></li>
-                </ul>
-            </section>
-            <section class="footsec" id="sec2">
-                <H4 class="center">community</H4>
-                <ul class="center">
-                    <li><a href="comingsoon.html">Discord</a></li>
-                    <li><a href="comingsoon.html">facebook Group</a></li>
-                    <li><a href="comingsoon.html">Web Chat</a></li>
-                </ul>
-            </section>
-            <section class="footsec" id="sec3">
-                <h4 class="center">Business</h4>
-                <ul class="center">
-                    <li><a href="comingsoon.html">Portfolio</a></li>
-                    <li><a href="comingsoon.html">Hire as freelancer</a></li>
-                    <li><a href="https://bit.ly/shoaibhossain">Contact with me</a></li>
-                </ul>
-            </section>
-        </footer>
-    </div>
-
+    <div id="footer"></div>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

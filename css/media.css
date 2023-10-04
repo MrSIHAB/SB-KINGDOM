@@ -7,19 +7,19 @@ body{
     text-decoration: 3px underline;
     margin: 3rem 0;
 }
-#em{
+#mediaContainer{
     background: #02001ac9;
-    padding: 2rem 0;
+    padding: 1rem 0;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     border-top: 3px solid #ff28bf;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 iframe , .iframe{
     color: #9ec8f3;
-    box-shadow:0px 0px 24px 1px #1effd53b;
+    box-shadow:0px 0px 24px 4px #1effd53b;
     width: 40vw;
     margin: 0.5em;
     border: 5px solid;
@@ -32,6 +32,8 @@ iframe , .iframe{
 }
 @media (max-width: 800px) {
     iframe{
-        margin: 1rem;
+        width: auto;
+        margin: 2em;
+        height: 45vw;
     }
 }

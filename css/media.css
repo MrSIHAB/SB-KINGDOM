@@ -26,10 +26,24 @@ iframe , .iframe{
     border-radius: 12px;
     flex-grow: 2;
 
-
-    /* text-shadow: 0px 0px 4px #be11a7; */
-    /* padding: 0.2em; */
 }
+
+.ytp-large-play-button>svg, .ytp-large-play-button>svg{
+    z-index: -1;
+    opacity: 0 !important;
+
+}
+.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
+    cursor: pointer;
+    display: none;
+}
+.ytp-large-play-button-red-bg .ytp-large-play-button-bg {
+    fill: rgb(0, 26, 255) !important;
+    display: none;
+    fill-opacity: 1;
+    color: aqua !important;
+}
+
 @media (max-width: 800px) {
     iframe{
         width: auto;

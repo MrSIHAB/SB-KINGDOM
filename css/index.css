@@ -45,6 +45,7 @@ iframe , .iframe{
     }
 
     #intro{
-        width: 50 %;
+        display: block;
+        width: 70vw;
     }
 }

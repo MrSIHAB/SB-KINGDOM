@@ -1,16 +1,25 @@
 
 body{
     /* background: #eaeafc url(../img/bg.jpg) no-repeat; */
-    background-size: cover;
+    /* background-size: cover; */
+    background-blend-mode: hard-light;
+    background-image: url(../img/background.jpg);
+    background-position: 50%;
+
 }
 iframe{
+    display: flex;
     color: #9ec8f3;
     box-shadow:0px 0px 24px 1px #1effd53b;
-    margin: 0.5em;
+    margin: auto;
+    margin-bottom: 10%;
     border: 5px solid;
     border-radius: 12px;
     flex-grow: 2;
-
+    width: 90%;
+    max-width: 700px;
+    height: 39vh;
+    opacity: 05%;
 
     /* text-shadow: 0px 0px 4px #be11a7; */
     /* padding: 0.2em; */

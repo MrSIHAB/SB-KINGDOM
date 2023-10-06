@@ -1,4 +1,4 @@
-const nav = `<nav>
+const nav = ` <nav>
 <div id="logo">
     <div id="img">
         <a href="index.html"><img src="img/sbkingdom.png" alt="logo"></a>
@@ -8,22 +8,29 @@ const nav = `<nav>
     </div>
 </div>
 <div id="navbar">
-    <ul>
+    <div class="toggle-bar" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="menu">
         <li class="navli"><a href="index.html">Home</a></li>
-
-
         <li class="navli"><a href="Annousement.html">Annousement</a></li>
-
-
         <li class="navli"><a href="Updates.html">Updates</a></li>
-
-
         <li class="navli"><a href="Media.html">Media</a></li>
-
-
         <li class="navli"><a href="About_Us.html">About Us</a></li>
-
+        
     </ul>
+</div>
+<!-- <div id="tgbar">
+    <ul id="toggle">
+        <li class="toggleli">a</li>
+        <li class="toggleli">a</li>
+        <li class="toggleli">a</li>
+        <li class="toggleli">a</li>
+        <li class="toggleli">a</li>
+        
+    </ul>  -->
 </div>
 </nav>`;
 

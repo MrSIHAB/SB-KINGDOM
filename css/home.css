@@ -29,15 +29,6 @@ body {
     /* height: 900px; */
 }
 
-nav {
-    /* visibility: absolute; */
-    /* top: 13px;
-    right: 20px; */
-
-    /* background: rgba(0, 0, 0, 0) url(img/shoaib15.png); */
-    /* background-repeat: no-repeat; */
-}
-
 #logo {
     /* border: 4px solid rgb(10, 80, 28); */
     margin: 9px 4px 3px 21px;
@@ -45,7 +36,6 @@ nav {
     position: relative;
     display: flex;
     flex-direction: row;
-    /* width: 210px; */
     font-size: larger;
     position: sticky;
     bottom: 0px;
@@ -66,7 +56,6 @@ nav {
 }
 
 #navbar {
-    /* border: 2px solid black; */
     text-decoration: none;
     text-emphasis: none;
     margin: 0px 0px 6px 6px;
@@ -75,7 +64,6 @@ nav {
     top: 0px;
     right: 0px;
     width: 470px;
-    /* width: 432px; */
     background-color: rgb(11 10 92);
     background-blend-mode: multiply;
     border-radius: 0px 0px 0px 55px;
@@ -90,7 +78,7 @@ nav {
 
 }
 
-.navli {
+.menu li {
     list-style: none;
     text-decoration: none;
     padding: 0px 18px;
@@ -104,52 +92,106 @@ nav {
     font-size: 13px;
 }
 
-#navbar ul a:visited {
+/* #navbar ul a:visited {
     color: rgb(241 234 4);
-}
+} */
 
 #navbar ul a:hover {
     color:  #ff0202;
     text-shadow: 0 0 1px  #e7cbcb;
 }
 
+.toggle-bar {
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+
 #top {
-    /* display:hidden; */
     position: fixed;
-    /* top: 0px; */
-    /* justify-content: right; */
     text-size-adjust: 2em;
     right: 5px;
     bottom: 50px;
-    /* margin: 10px;
-    padding: 10px; */
+
 
 }
-    @media (max-width: 800px) {
+    @media (max-width: 768px) {
         #navbar {
-            width: 260px;
-            padding: 0px 0px;
-        }
-    
-        .navli {
-            padding: 0px 5px;
+            position: absolute;
+            right: 1vw;
+            width: auto;
+            background-color: unset;
+            
         }
 
-        #navbar ul a{
-            font-size: 10px;
-        }
         #logo{
-            font-size: 6px;
+
+            font-size: 16px;
             margin: 0px 0px 27px 0px;
             padding: 4px;
+            margin: 0.75%;
+            
         }
         #logo img{
             height: unset;
-            width:20px;
+            width: 35px;
             border-radius: 5px;
         }
         #title{
             border: 0px;
             margin: 0px;
+            margin-left: 2%;
         }
+        #navbar ul {
+            display: unset;
+            float: unset;
+            padding: unset;
+            position: fixed;
+            top: 8vh;
+            right: 0;
+        }
+        .menu li {
+            list-style: none;
+            text-decoration: unset;
+            padding: 5%;
+            text-align: center;
+            z-index: 50;
+            background-color: #090029e7;
+            border:  red;
+            width: 70vw;;
+            height: 5vh;
+        }
+        .navli{
+            display: none;
+
+        }
+        .navli:hover{
+            background-color: rgba(2, 185, 140, 0.966);
+            color: aliceblue;
+        }
+        .toggle-bar{
+            display: block;
+            position: fixed;
+            right: 1%;
+            z-index: 2;
+        }
+        
+        
+        #navbar ul a {
+            font-size: large; 
+            color: #42e9e9;
+            text-shadow: 00 00 3px #75c3d1e7;
+            z-index: 50;
+
+        }
+        #navbar ul a:hover {
+            color:  #d7f4ff;
+            text-shadow: 0 0 5px  #000000;
+        }
+
     }

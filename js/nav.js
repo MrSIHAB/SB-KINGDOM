@@ -1,37 +1,31 @@
-const nav = ` <nav>
+const nav = `<nav>
 <div id="logo">
     <div id="img">
         <a href="index.html"><img src="img/sbkingdom.png" alt="logo"></a>
     </div>
     <div id="title">
-        <a href="index.html"><h3>SB KINGDOM</h3></a>
+        <a href="index.html">
+            <h3>SB KINGDOM</h3>
+        </a>
     </div>
 </div>
 <div id="navbar">
-    <div class="toggle-bar" onclick="toggleMenu()">
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="checkbox" id="checkbtn">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-    </div>
-    <ul class="menu">
+    </label>
+    <ul class="menu" id="menu">
         <li class="navli"><a href="index.html">Home</a></li>
         <li class="navli"><a href="Annousement.html">Annousement</a></li>
         <li class="navli"><a href="Updates.html">Updates</a></li>
         <li class="navli"><a href="Media.html">Media</a></li>
         <li class="navli"><a href="About_Us.html">About Us</a></li>
-        
+
     </ul>
 </div>
-<!-- <div id="tgbar">
-    <ul id="toggle">
-        <li class="toggleli">a</li>
-        <li class="toggleli">a</li>
-        <li class="toggleli">a</li>
-        <li class="toggleli">a</li>
-        <li class="toggleli">a</li>
-        
-    </ul>  -->
-</div>
+
 </nav>`;
 
 const footer =  `<div class="footer">

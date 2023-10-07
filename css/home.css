@@ -101,7 +101,7 @@ body {
     text-shadow: 0 0 1px  #e7cbcb;
 }
 
-.toggle-bar {
+#checkbtn {
     cursor: pointer;
     display: none;
 }
@@ -119,6 +119,11 @@ body {
     bottom: 50px;
 
 
+}
+#checkbox{
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
 }
     @media (max-width: 768px) {
         #navbar {
@@ -153,45 +158,50 @@ body {
             padding: unset;
             position: fixed;
             top: 8vh;
-            right: 0;
+            right: -100%;
+            transition: all .5s;
+            
         }
         .menu li {
             list-style: none;
             text-decoration: unset;
-            padding: 5%;
+            padding: 5% 5% 5% 5%;
             text-align: center;
             z-index: 50;
             background-color: #090029e7;
             border:  red;
-            width: 70vw;;
-            height: 5vh;
+            width: 70vw;
+            height: 10vh;
+            justify-items: center;
         }
-        .navli{
-            display: none;
-
-        }
-        .navli:hover{
+        
+        #navbar a:hover{
             background-color: rgba(2, 185, 140, 0.966);
             color: aliceblue;
         }
-        .toggle-bar{
-            display: block;
-            position: fixed;
-            right: 1%;
-            z-index: 2;
-        }
-        
         
         #navbar ul a {
             font-size: large; 
             color: #42e9e9;
             text-shadow: 00 00 3px #75c3d1e7;
             z-index: 50;
+            display: block;
+            padding: 11%;
+            height: auto;
+            
 
         }
         #navbar ul a:hover {
             color:  #d7f4ff;
             text-shadow: 0 0 5px  #000000;
+        }
+        #checkbtn{
+            display: block;
+            position: fixed;
+            right: 5%;
+        }
+        #checkbox:checked ~ #menu{
+            right: 0%;
         }
 
     }

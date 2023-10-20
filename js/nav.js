@@ -50,7 +50,7 @@ const footer =  `<div class="footer">
     <section class="footsec" id="sec3">
         <h4 class="center">Business</h4>
         <ul class="center">
-            <li><a href="comingsoon.html">Portfolio</a></li>
+            <li><a href="https://sbstudio.netliffy.app">Portfolio</a></li>
             <li><a href="comingsoon.html">Hire as freelancer</a></li>
             <li><a href="https://bit.ly/shoaibhossain">Contact with me</a></li>
         </ul>

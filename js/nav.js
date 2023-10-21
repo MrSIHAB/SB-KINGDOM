@@ -40,19 +40,19 @@ const footer =  `<div class="footer">
         </ul>
     </section>
     <section class="footsec" id="sec2">
-        <H4 class="center">Community</H4>
+        <H4 class="center">community</H4>
         <ul class="center">
             <li><a href="comingsoon.html">Discord</a></li>
-            <li><a href="comingsoon.html">facebook Group</a></li>
+            <li><a href="https://www.facebook.com/groups/newstatecommunity" target="_blank">facebook Group</a></li>
             <li><a href="comingsoon.html">Web Chat</a></li>
         </ul>
     </section>
     <section class="footsec" id="sec3">
         <h4 class="center">Business</h4>
         <ul class="center">
-            <li><a href="https://sbstudio.netlify.app">Portfolio</a></li>
-            <li><a href="comingsoon.html">Hire as freelancer</a></li>
-            <li><a href="https://bit.ly/shoaibhossain">Contact with me</a></li>
+            <li><a href="https://sbstudio.netlify.app/" target="_blank">Portfolio</a></li>
+            <li><a href="https://fiverr.com/shoaib_hossain_" target="_blank">Hire as freelancer</a></li>
+            <li><a href="https://bit.ly/shoaibhossain" target="_blank">Contact with me</a></li>
         </ul>
     </section>
 </footer>
